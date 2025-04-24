@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Prajakta Dargade</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- Stylesheets (local and external) -->
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Swiper styles and script -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- jQuery (must be before your custom JS if you're using $) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Matter.js and plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+
+    <!-- Your custom JS file -->
+    <script src="./matter.js" defer></script>
+</head>
+
+
+<body>
+    <section>
+        <div class="wrapper">
+            <div class="cover cover-left"></div>
+            <div class="cover cover-right"></div>
+            <div class="book">
+                <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
+                <!-- profile page -->
+                <div class="book-page page-left">
+                    <div class="profile-page">
+                        <img src="images (1).png" alt="">
+                        <h1 class="">Prajakta Dargade</h1>
+                        <h3>Full Stack Web Developer</h3>
+                        <div class="social-media">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://github.com/PrajaktaDargade"><i class='bx bxl-github'></i></i></a>
+                            <a href="https://www.linkedin.com/in/prajakta-dargade-71b146241/"><i
+                                    class='bx bxl-linkedin'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                        <p> Hi I'm Prajakta Dargade,
+                            Full Stack Web Developer with experience in Web Development.
+                            Skilled in frontend and back-end development,
+                            software testing, and delivering high-quality web applications.
+                            Certified by AITE Institute, committed to continuous learning and innovation.
+                        </p>
+                        <div class="btn-box">
+                            <a href="PrajaktaCV.pdf" download="" class="btn">Download CV</a>
+                            <a href="#contact" class="btn contact-me">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- page 1 & 2 -->
+                <div class="book-page page-right turn" id="turn-1">
+                    <!-- page1 (Work Experience) -->
+                    <div class="page-front">
+                        <h1 class="title">Work Experience</h1>
+                        <div class="workeduc-box">
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2022 - 2023</span>
+                                <h3>Software Tester - Word publishing</h3>
+                                <p>Detail-oriented manual software tester specializing in Word publishing software,
+                                    focusing on document formatting, compatibility, integration, and defect tracking
+                                    with Jira.</p>
+                            </div>
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2023 - 2024</span>
+                                <h3>.NET Developer - ITspice Pvt. Ltd.</h3>
+                                <p>Designing scalable applications, integrating APIs, ensuring seamless data exchange,
+                                    and maintaining high code quality with unit testing using xUnit and NUnit.</p>
+                            </div>
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2024 - 2025</span>
+                                <h3>Full Stack Web Developer - Trupoint IT and Consulting Pvt.ltd</h3>
+                                <p>I build dynamic, scalable websites using WordPress, PHP, Laravel, React, HTML, CSS,
+                                    Bootstrap, and Tailwind CSS, focusing on responsive, high-performance web
+                                    applications that meet client needs.</p>
+                            </div>
+                        </div>
+                        <span class="number-page">1</span>
+                        <!-- Next page -->
+                        <span class="nextprev-btn text-black" data-page="turn-1">
+                            <i class='bx bx-chevron-right'></i>
+                        </span>
+                    </div>
+                    <!-- page2 (Education) -->
+                    <div class="page-back">
+                        <h1 class="title">Education</h1>
+
+                        <div class="workeduc-box">
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2017 - 2020</span>
+                                <h3>BSC(CS)</h3>
+                                <p>Bachelor of Computer Science 2019 - 2020
+                                    Mumbai University Mumbai, India</p>
+                            </div>
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2015 - 2017</span>
+                                <h3>HSC</h3>
+                                <p>Higher Secondary Certificate 2015 - 2017
+                                    Mumbai University Mumbai, India</p>
+                            </div>
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2014 - 2015 </span>
+                                <h3>SSC</h3>
+                                <p> Secondary School Certificate 2014 - 2015
+                                    Mumbai University Mumbai, India</p>
+                            </div>
+                        </div>
+                        <span class="number-page">2</span>
+                        <!-- Prev page -->
+                        <span class="nextprev-btn back" data-page="turn-1">
+                            <i class='bx bx-chevron-left'></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- page 3 & 4 -->
+                <div class="book-page page-right turn" id="turn-2">
+                    <!-- page 3 (My Services) -->
+                    <div class="page-front">
+                        <h1 class="title">My Services</h1>
+                        <div class="services-box">
+                            <div class="services-content">
+                                <i class='bx bx-code-alt'></i>
+                                <h3>Web Devlopment</h3>
+                                <p>Front-end, back-end, full-stack development.</p>
+                                <!-- <a href="#" class="btn">Read More</a> -->
+                            </div>
+                            <div class="services-content">
+                                <i class='bx bx-code-alt'></i>
+                                <h3>E-commerce Development</h3>
+                                <p> WooCommerce, custom e-commerce websites.</p>
+                                <!-- <a href="#" class="btn">Read More</a> -->
+                            </div>
+                            <div class="services-content">
+                                <i class='bx bx-code-alt'></i>
+                                <h3>CMS Development</h3>
+                                <p>WordPress development.</p>
+                                <!-- <a href="#" class="btn">Read More</a> -->
+                            </div>
+                            <div class="services-content">
+                                <i class='bx bx-code-alt'></i>
+                                <h3>API Integration</h3>
+                                <p>Connecting systems and services for smoother operations</p>
+                                <!-- <a href="#" class="btn">Read More</a> -->
+                            </div>
+                            <span class="number-page">3</span>
+                            <!-- Next page -->
+                            <span class="nextprev-btn" data-page="turn-2">
+                                <i class='bx bx-chevron-right'></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- page 4 (My Services) -->
+                    <div class="page-back">
+                        <h1 class="title">My Skills</h1>
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <h3>Front-End</h3>
+                                <div class="content">
+                                    <span><i class='bx bxl-html5'></i>HTML</span>
+                                    <span><i class='bx bxl-css3'></i>CSS</span>
+                                    <span><i class='bx bxl-tailwind-css'></i>Tailwind</span>
+                                    <span><i class='bx bxl-bootstrap'></i>Bootstrap</span>
+                                    <span><i class='bx bxl-javascript'></i>JavaScript</span>
+                                    <span><i class='bx bxl-react'></i>React</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <h3>Back-End</h3>
+                                <div class="content">
+                                    <span><i class='bx bxl-php'></i>PHP</span>
+                                    <span><i class='bx bxl-postgresql'></i>SQL</span>
+                                    <span><i class='bx bxl-nodejs'></i>Node</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <h3>UI/UX Design</h3>
+                                <div class="content">
+                                    <span><i class='bx bxl-figma'></i>Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="number-page">4</span>
+                        <!-- Prev page -->
+                        <span class="nextprev-btn back" data-page="turn-2">
+                            <i class='bx bx-chevron-left'></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- page 5 & 6 -->
+                <div class="book-page page-right turn" id="turn-3">
+                    <!-- page 5 (my latest project) -->
+                    <div class="page-front overflow">
+                        <h1 class="title">Latest Project</h1>
+                        <div class="portfolio-box">
+                            <div class="img-box">
+                                <img src="/Portfolio/Capture1.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>NaTours</h3>
+                                <a href="https://prajaktadargade.github.io/Natours/">Live Preview <i
+                                        class='bx bx-link-external'></i></a>
+                            </div>
+                            <!-- <p>Tech Used:</p> -->
+                            <p>HTML|CSS|JAVASCRIPT|SAAS</p>
+
+                        </div>
+
+
+                        <div class="portfolio-box">
+                            <div class="img-box">
+                                <img src="/Portfolio/Capture3.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>Trillo</h3>
+                                <a href="https://prajaktadargade.github.io/Trillo/">Live Preview <i
+                                        class='bx bx-link-external'></i></a>
+                            </div>
+                            <!-- <p>Tech Used:</p> -->
+                            <p>HTML|CSS|JAVASCRIPT|SAAS</p>
+
+                        </div>
+                       
+                        <div class="btn-box">
+                            <!-- <a href="#" class="btn">Source Code</a> -->
+                            <button class="btn" id="openModalBtn">More Projects</button>
+
+                        </div>
+                        <span class="number-page">5</span>
+                        <!-- Next page -->
+                        <span class="nextprev-btn" data-page="turn-3">
+                            <i class='bx bx-chevron-right'></i>
+                        </span>
+                    </div>
+                    <!-- page 6 (my latest project) -->
+                    <div id="contact" class="page-back">
+                        <h1 class="title">Contact Me!</h1>
+                        <div class="contact-box">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="7fa65de2-d9a1-4bb1-97a8-1e594285460a">
+
+                                <input name="full_name" type="text" class="field" placeholder="Full Name" required>
+
+                                <input name="email" type="email" class="field" placeholder="Email Address" required>
+
+                                <!-- Add name attribute to textarea -->
+                                <textarea name="message" id="message" cols="30" rows="10" class="field"
+                                    placeholder="Your Message" required></textarea>
+
+                                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                                <input type="submit" class="btn" value="Send Message">
+                            </form>
+
+                        </div>
+                        <span class="number-page">6</span>
+                        <!-- Prev page -->
+                        <span class="nextprev-btn back" data-page="turn-3">
+                            <i class='bx bx-chevron-left'></i>
+                        </span>
+                        <div class="back-profile">
+                            <p>Profile</p>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Modal -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2>More Projects</h2>
+        <ul>
+        
+            <div class="portfolio-box1">
+                <div class="img-box1">
+                    <video controls autoplay muted loop>
+                        <source src="/Portfolio/NewsSite.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">
+                    <h3>News-Site</h3>
+                    <a href="http://sitenews.kesug.com/" target="_blank">Live Preview <i class='bx bx-link-external'></i></a>
+                </div>
+                <p>HTML | CSS | PHP | JavaScript | SAAS | CRUD</p>
+            </div>
+
+            <div class="portfolio-box1">
+                <div class="img-box">
+                    <img src="/Portfolio/Capture2.PNG" alt="">
+                </div>
+            </div>
+            <div class="info-box1">
+                <div class="info-title">
+                    <h3>Nexter</h3>
+                    <a href="https://prajaktadargade.github.io/Nexter/">Live Preview <i
+                            class='bx bx-link-external'></i></a>
+                </div>
+                <!-- <p>Tech Used:</p> -->
+                <p>HTML|CSS|JAVASCRIPT|SAAS</p>
+
+            </div>
+
+            
+           
+            <!-- Add more as needed -->
+        </ul>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
